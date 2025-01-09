@@ -1,12 +1,18 @@
+
 import logo from '@/assets/logo.svg';
-import '@/styles/App.css';
+import '@/styles/global.css';
+import { Routes, Route } from 'react-router-dom';
+import Home from "@pages/Home";
 
 function App() {
   return (
-    <div className="text-center">
-      <h1 className="text-3xl font-bold underline text-blue-600">
-        Hello, Tailwind with React + TypeScript!
-      </h1>
+    <div>
+      <Routes>
+        <Route
+          path = "/"
+          element = {<Home />}
+        />
+      </Routes>
     </div>
   );
 }
